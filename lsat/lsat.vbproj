@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_CohortMgmt.Designer.vb">
+      <DependentUpon>frm_CohortMgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CohortMgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_ConnProp.Designer.vb">
       <DependentUpon>frm_ConnProp.vb</DependentUpon>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_CohortMgmt.resx">
+      <DependentUpon>frm_CohortMgmt.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ConnProp.resx">
       <DependentUpon>frm_ConnProp.vb</DependentUpon>
     </EmbeddedResource>

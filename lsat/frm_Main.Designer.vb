@@ -76,7 +76,7 @@ Partial Class frm_Main
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Calibri", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(700, 55)
+        Me.Label1.Location = New System.Drawing.Point(683, 55)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(232, 35)
         Me.Label1.TabIndex = 1
@@ -85,7 +85,7 @@ Partial Class frm_Main
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(38, 269)
+        Me.PictureBox3.Location = New System.Drawing.Point(94, 297)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -96,7 +96,7 @@ Partial Class frm_Main
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(193, 293)
+        Me.Label2.Location = New System.Drawing.Point(249, 319)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(125, 21)
         Me.Label2.TabIndex = 4
@@ -105,7 +105,7 @@ Partial Class frm_Main
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(38, 383)
+        Me.PictureBox4.Location = New System.Drawing.Point(94, 417)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -116,7 +116,7 @@ Partial Class frm_Main
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(193, 407)
+        Me.Label3.Location = New System.Drawing.Point(249, 439)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(99, 21)
         Me.Label3.TabIndex = 6
@@ -125,7 +125,7 @@ Partial Class frm_Main
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(38, 513)
+        Me.PictureBox5.Location = New System.Drawing.Point(94, 539)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -136,7 +136,7 @@ Partial Class frm_Main
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(193, 537)
+        Me.Label4.Location = New System.Drawing.Point(249, 561)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 8
@@ -145,7 +145,7 @@ Partial Class frm_Main
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(689, 383)
+        Me.PictureBox6.Location = New System.Drawing.Point(648, 541)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -156,7 +156,7 @@ Partial Class frm_Main
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(811, 407)
+        Me.Label5.Location = New System.Drawing.Point(770, 565)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 21)
         Me.Label5.TabIndex = 10
@@ -165,7 +165,7 @@ Partial Class frm_Main
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(689, 269)
+        Me.PictureBox7.Location = New System.Drawing.Point(648, 297)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -176,7 +176,7 @@ Partial Class frm_Main
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(811, 293)
+        Me.Label7.Location = New System.Drawing.Point(770, 321)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(135, 21)
         Me.Label7.TabIndex = 13
@@ -185,7 +185,7 @@ Partial Class frm_Main
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(689, 513)
+        Me.PictureBox8.Location = New System.Drawing.Point(648, 411)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -196,7 +196,7 @@ Partial Class frm_Main
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(811, 537)
+        Me.Label8.Location = New System.Drawing.Point(770, 435)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(130, 21)
         Me.Label8.TabIndex = 16
