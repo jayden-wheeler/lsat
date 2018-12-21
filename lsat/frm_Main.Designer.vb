@@ -25,7 +25,6 @@ Partial Class frm_Main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Main))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -34,19 +33,33 @@ Partial Class frm_Main
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActivityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferencesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PasteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WeeklyProgressToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AssessmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CohortManagementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IncentiveTrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferencesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CheckProcessingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -69,16 +82,6 @@ Partial Class frm_Main
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "LSAT :: Main Menu"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(689, 631)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
@@ -92,9 +95,10 @@ Partial Class frm_Main
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(193, 293)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 17)
+        Me.Label2.Size = New System.Drawing.Size(125, 21)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Weekly Progress"
         '
@@ -111,9 +115,10 @@ Partial Class frm_Main
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(193, 407)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(91, 17)
+        Me.Label3.Size = New System.Drawing.Size(99, 21)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Assessments"
         '
@@ -130,9 +135,10 @@ Partial Class frm_Main
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(193, 537)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(136, 17)
+        Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Cohort Management"
         '
@@ -149,20 +155,12 @@ Partial Class frm_Main
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(811, 407)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 17)
+        Me.Label5.Size = New System.Drawing.Size(91, 21)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Preferences"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(811, 655)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(103, 17)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Exit Application"
         '
         'PictureBox7
         '
@@ -177,9 +175,10 @@ Partial Class frm_Main
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(811, 293)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(123, 17)
+        Me.Label7.Size = New System.Drawing.Size(135, 21)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Incentive Tracking"
         '
@@ -196,11 +195,109 @@ Partial Class frm_Main
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Calibri", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(811, 537)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(121, 17)
+        Me.Label8.Size = New System.Drawing.Size(130, 21)
         Me.Label8.TabIndex = 16
         Me.Label8.Text = "Check Processing"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ActivityToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1006, 28)
+        Me.MenuStrip1.TabIndex = 17
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreferencesToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopyToolStripMenuItem, Me.CutToolStripMenuItem, Me.PasteToolStripMenuItem})
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'ActivityToolStripMenuItem
+        '
+        Me.ActivityToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WeeklyProgressToolStripMenuItem, Me.AssessmentsToolStripMenuItem, Me.CohortManagementToolStripMenuItem, Me.IncentiveTrackingToolStripMenuItem, Me.PreferencesToolStripMenuItem1, Me.CheckProcessingToolStripMenuItem})
+        Me.ActivityToolStripMenuItem.Name = "ActivityToolStripMenuItem"
+        Me.ActivityToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
+        Me.ActivityToolStripMenuItem.Text = "Activity"
+        '
+        'PreferencesToolStripMenuItem
+        '
+        Me.PreferencesToolStripMenuItem.Name = "PreferencesToolStripMenuItem"
+        Me.PreferencesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.PreferencesToolStripMenuItem.Text = "Preferences"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'CopyToolStripMenuItem
+        '
+        Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.CopyToolStripMenuItem.Text = "Copy"
+        '
+        'CutToolStripMenuItem
+        '
+        Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.CutToolStripMenuItem.Text = "Cut"
+        '
+        'PasteToolStripMenuItem
+        '
+        Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.PasteToolStripMenuItem.Text = "Paste"
+        '
+        'WeeklyProgressToolStripMenuItem
+        '
+        Me.WeeklyProgressToolStripMenuItem.Name = "WeeklyProgressToolStripMenuItem"
+        Me.WeeklyProgressToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.WeeklyProgressToolStripMenuItem.Text = "Weekly Progress"
+        '
+        'AssessmentsToolStripMenuItem
+        '
+        Me.AssessmentsToolStripMenuItem.Name = "AssessmentsToolStripMenuItem"
+        Me.AssessmentsToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.AssessmentsToolStripMenuItem.Text = "Assessments"
+        '
+        'CohortManagementToolStripMenuItem
+        '
+        Me.CohortManagementToolStripMenuItem.Name = "CohortManagementToolStripMenuItem"
+        Me.CohortManagementToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.CohortManagementToolStripMenuItem.Text = "Cohort Management"
+        '
+        'IncentiveTrackingToolStripMenuItem
+        '
+        Me.IncentiveTrackingToolStripMenuItem.Name = "IncentiveTrackingToolStripMenuItem"
+        Me.IncentiveTrackingToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.IncentiveTrackingToolStripMenuItem.Text = "Incentive Tracking"
+        '
+        'PreferencesToolStripMenuItem1
+        '
+        Me.PreferencesToolStripMenuItem1.Name = "PreferencesToolStripMenuItem1"
+        Me.PreferencesToolStripMenuItem1.Size = New System.Drawing.Size(221, 26)
+        Me.PreferencesToolStripMenuItem1.Text = "Preferences"
+        '
+        'CheckProcessingToolStripMenuItem
+        '
+        Me.CheckProcessingToolStripMenuItem.Name = "CheckProcessingToolStripMenuItem"
+        Me.CheckProcessingToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.CheckProcessingToolStripMenuItem.Text = "Check Processing"
         '
         'frm_Main
         '
@@ -212,7 +309,6 @@ Partial Class frm_Main
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.Label4)
@@ -221,22 +317,24 @@ Partial Class frm_Main
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximumSize = New System.Drawing.Size(1024, 768)
         Me.MinimumSize = New System.Drawing.Size(1024, 768)
         Me.Name = "frm_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LSAT :: Main Menu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -244,7 +342,6 @@ Partial Class frm_Main
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox4 As PictureBox
@@ -253,9 +350,23 @@ Partial Class frm_Main
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PreferencesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopyToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PasteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ActivityToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WeeklyProgressToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AssessmentsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CohortManagementToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IncentiveTrackingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PreferencesToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CheckProcessingToolStripMenuItem As ToolStripMenuItem
 End Class
