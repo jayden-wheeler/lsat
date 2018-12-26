@@ -13,4 +13,5 @@
         txtb_dbName.Text = My.Settings.dbName
         txtb_dbPort.Text = My.Settings.dbPort
     End Sub
+
 End Class

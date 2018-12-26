@@ -34,9 +34,9 @@ Partial Class frm_ConnProp
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_Test = New System.Windows.Forms.Button()
+        Me.btn_Cancel = New System.Windows.Forms.Button()
+        Me.btn_OK = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,7 +81,7 @@ Partial Class frm_ConnProp
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(147, 68)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(328, 289)
+        Me.GroupBox1.Size = New System.Drawing.Size(390, 289)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Database Properties"
@@ -90,35 +90,35 @@ Partial Class frm_ConnProp
         '
         Me.txtb_dbPort.Location = New System.Drawing.Point(158, 200)
         Me.txtb_dbPort.Name = "txtb_dbPort"
-        Me.txtb_dbPort.Size = New System.Drawing.Size(100, 22)
+        Me.txtb_dbPort.Size = New System.Drawing.Size(65, 22)
         Me.txtb_dbPort.TabIndex = 10
         '
         'txtb_dbHost
         '
         Me.txtb_dbHost.Location = New System.Drawing.Point(158, 165)
         Me.txtb_dbHost.Name = "txtb_dbHost"
-        Me.txtb_dbHost.Size = New System.Drawing.Size(100, 22)
+        Me.txtb_dbHost.Size = New System.Drawing.Size(188, 22)
         Me.txtb_dbHost.TabIndex = 9
         '
         'txtb_dbName
         '
         Me.txtb_dbName.Location = New System.Drawing.Point(158, 130)
         Me.txtb_dbName.Name = "txtb_dbName"
-        Me.txtb_dbName.Size = New System.Drawing.Size(100, 22)
+        Me.txtb_dbName.Size = New System.Drawing.Size(188, 22)
         Me.txtb_dbName.TabIndex = 8
         '
         'txtb_dbPass
         '
         Me.txtb_dbPass.Location = New System.Drawing.Point(158, 92)
         Me.txtb_dbPass.Name = "txtb_dbPass"
-        Me.txtb_dbPass.Size = New System.Drawing.Size(100, 22)
+        Me.txtb_dbPass.Size = New System.Drawing.Size(188, 22)
         Me.txtb_dbPass.TabIndex = 7
         '
         'txtb_dbUser
         '
         Me.txtb_dbUser.Location = New System.Drawing.Point(158, 55)
         Me.txtb_dbUser.Name = "txtb_dbUser"
-        Me.txtb_dbUser.Size = New System.Drawing.Size(100, 22)
+        Me.txtb_dbUser.Size = New System.Drawing.Size(188, 22)
         Me.txtb_dbUser.TabIndex = 6
         '
         'Label6
@@ -148,32 +148,32 @@ Partial Class frm_ConnProp
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Database:"
         '
-        'Button1
+        'btn_Test
         '
-        Me.Button1.Location = New System.Drawing.Point(193, 386)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Test"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_Test.Location = New System.Drawing.Point(193, 386)
+        Me.btn_Test.Name = "btn_Test"
+        Me.btn_Test.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Test.TabIndex = 4
+        Me.btn_Test.Text = "Test"
+        Me.btn_Test.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_Cancel
         '
-        Me.Button2.Location = New System.Drawing.Point(274, 386)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_Cancel.Location = New System.Drawing.Point(274, 386)
+        Me.btn_Cancel.Name = "btn_Cancel"
+        Me.btn_Cancel.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Cancel.TabIndex = 5
+        Me.btn_Cancel.Text = "Cancel"
+        Me.btn_Cancel.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_OK
         '
-        Me.Button3.Location = New System.Drawing.Point(355, 386)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "OK"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_OK.Location = New System.Drawing.Point(355, 386)
+        Me.btn_OK.Name = "btn_OK"
+        Me.btn_OK.Size = New System.Drawing.Size(75, 23)
+        Me.btn_OK.TabIndex = 6
+        Me.btn_OK.Text = "OK"
+        Me.btn_OK.UseVisualStyleBackColor = True
         '
         'frm_ConnProp
         '
@@ -181,9 +181,9 @@ Partial Class frm_ConnProp
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(622, 433)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_OK)
+        Me.Controls.Add(Me.btn_Cancel)
+        Me.Controls.Add(Me.btn_Test)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.MaximumSize = New System.Drawing.Size(640, 480)
@@ -209,7 +209,7 @@ Partial Class frm_ConnProp
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btn_Test As Button
+    Friend WithEvents btn_Cancel As Button
+    Friend WithEvents btn_OK As Button
 End Class
