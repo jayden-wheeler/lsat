@@ -30,16 +30,16 @@ Partial Class frm_Prefs
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtb_dbPort = New System.Windows.Forms.TextBox()
+        Me.txtb_dbHost = New System.Windows.Forms.TextBox()
+        Me.txtb_dbName = New System.Windows.Forms.TextBox()
+        Me.lbl_dbPort = New System.Windows.Forms.Label()
+        Me.lbl_dbHost = New System.Windows.Forms.Label()
+        Me.lbl_dbName = New System.Windows.Forms.Label()
+        Me.txtb_dbPass = New System.Windows.Forms.TextBox()
+        Me.lbl_dbPass = New System.Windows.Forms.Label()
+        Me.txtb_dbUser = New System.Windows.Forms.TextBox()
+        Me.lbl_dbUser = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -96,122 +96,120 @@ Partial Class frm_Prefs
         '
         'Button2
         '
-        Me.Button2.AutoSize = True
-        Me.Button2.Location = New System.Drawing.Point(627, 261)
+        Me.Button2.Location = New System.Drawing.Point(621, 261)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(78, 31)
+        Me.Button2.Size = New System.Drawing.Size(80, 35)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Defaults"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.AutoSize = True
-        Me.Button1.Location = New System.Drawing.Point(711, 261)
+        Me.Button1.Location = New System.Drawing.Point(719, 261)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(76, 31)
+        Me.Button1.Size = New System.Drawing.Size(80, 35)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Apply"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.txtb_dbPort)
+        Me.GroupBox1.Controls.Add(Me.txtb_dbHost)
+        Me.GroupBox1.Controls.Add(Me.txtb_dbName)
+        Me.GroupBox1.Controls.Add(Me.lbl_dbPort)
+        Me.GroupBox1.Controls.Add(Me.lbl_dbHost)
+        Me.GroupBox1.Controls.Add(Me.lbl_dbName)
+        Me.GroupBox1.Controls.Add(Me.txtb_dbPass)
+        Me.GroupBox1.Controls.Add(Me.lbl_dbPass)
+        Me.GroupBox1.Controls.Add(Me.txtb_dbUser)
+        Me.GroupBox1.Controls.Add(Me.lbl_dbUser)
         Me.GroupBox1.Location = New System.Drawing.Point(24, 30)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(275, 262)
+        Me.GroupBox1.Size = New System.Drawing.Size(331, 262)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Connection Properties:"
         '
-        'TextBox5
+        'txtb_dbPort
         '
-        Me.TextBox5.Location = New System.Drawing.Point(137, 211)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 28)
-        Me.TextBox5.TabIndex = 9
+        Me.txtb_dbPort.Location = New System.Drawing.Point(137, 211)
+        Me.txtb_dbPort.Name = "txtb_dbPort"
+        Me.txtb_dbPort.Size = New System.Drawing.Size(67, 28)
+        Me.txtb_dbPort.TabIndex = 9
         '
-        'TextBox4
+        'txtb_dbHost
         '
-        Me.TextBox4.Location = New System.Drawing.Point(137, 167)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 28)
-        Me.TextBox4.TabIndex = 8
+        Me.txtb_dbHost.Location = New System.Drawing.Point(137, 167)
+        Me.txtb_dbHost.Name = "txtb_dbHost"
+        Me.txtb_dbHost.Size = New System.Drawing.Size(163, 28)
+        Me.txtb_dbHost.TabIndex = 8
         '
-        'TextBox3
+        'txtb_dbName
         '
-        Me.TextBox3.Location = New System.Drawing.Point(137, 123)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 28)
-        Me.TextBox3.TabIndex = 7
+        Me.txtb_dbName.Location = New System.Drawing.Point(137, 123)
+        Me.txtb_dbName.Name = "txtb_dbName"
+        Me.txtb_dbName.Size = New System.Drawing.Size(163, 28)
+        Me.txtb_dbName.TabIndex = 7
         '
-        'Label7
+        'lbl_dbPort
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(25, 218)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 21)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "DB Port:"
+        Me.lbl_dbPort.AutoSize = True
+        Me.lbl_dbPort.Location = New System.Drawing.Point(25, 218)
+        Me.lbl_dbPort.Name = "lbl_dbPort"
+        Me.lbl_dbPort.Size = New System.Drawing.Size(68, 21)
+        Me.lbl_dbPort.TabIndex = 6
+        Me.lbl_dbPort.Text = "DB Port:"
         '
-        'Label6
+        'lbl_dbHost
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(22, 174)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(71, 21)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "DB Host:"
+        Me.lbl_dbHost.AutoSize = True
+        Me.lbl_dbHost.Location = New System.Drawing.Point(22, 174)
+        Me.lbl_dbHost.Name = "lbl_dbHost"
+        Me.lbl_dbHost.Size = New System.Drawing.Size(71, 21)
+        Me.lbl_dbHost.TabIndex = 5
+        Me.lbl_dbHost.Text = "DB Host:"
         '
-        'Label5
+        'lbl_dbName
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 130)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 21)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "DB Name:"
+        Me.lbl_dbName.AutoSize = True
+        Me.lbl_dbName.Location = New System.Drawing.Point(14, 130)
+        Me.lbl_dbName.Name = "lbl_dbName"
+        Me.lbl_dbName.Size = New System.Drawing.Size(79, 21)
+        Me.lbl_dbName.TabIndex = 4
+        Me.lbl_dbName.Text = "DB Name:"
         '
-        'TextBox2
+        'txtb_dbPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(137, 79)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 28)
-        Me.TextBox2.TabIndex = 3
+        Me.txtb_dbPass.Location = New System.Drawing.Point(137, 79)
+        Me.txtb_dbPass.Name = "txtb_dbPass"
+        Me.txtb_dbPass.Size = New System.Drawing.Size(163, 28)
+        Me.txtb_dbPass.TabIndex = 3
         '
-        'Label4
+        'lbl_dbPass
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(23, 86)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 21)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "DB Pass:"
+        Me.lbl_dbPass.AutoSize = True
+        Me.lbl_dbPass.Location = New System.Drawing.Point(23, 86)
+        Me.lbl_dbPass.Name = "lbl_dbPass"
+        Me.lbl_dbPass.Size = New System.Drawing.Size(70, 21)
+        Me.lbl_dbPass.TabIndex = 2
+        Me.lbl_dbPass.Text = "DB Pass:"
         '
-        'TextBox1
+        'txtb_dbUser
         '
-        Me.TextBox1.Location = New System.Drawing.Point(137, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 28)
-        Me.TextBox1.TabIndex = 1
+        Me.txtb_dbUser.Location = New System.Drawing.Point(137, 35)
+        Me.txtb_dbUser.Name = "txtb_dbUser"
+        Me.txtb_dbUser.Size = New System.Drawing.Size(163, 28)
+        Me.txtb_dbUser.TabIndex = 1
         '
-        'Label3
+        'lbl_dbUser
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 42)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 21)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "DB User:"
+        Me.lbl_dbUser.AutoSize = True
+        Me.lbl_dbUser.Location = New System.Drawing.Point(23, 42)
+        Me.lbl_dbUser.Name = "lbl_dbUser"
+        Me.lbl_dbUser.Size = New System.Drawing.Size(70, 21)
+        Me.lbl_dbUser.TabIndex = 0
+        Me.lbl_dbUser.Text = "DB User:"
         '
         'TabPage2
         '
@@ -257,11 +255,11 @@ Partial Class frm_Prefs
         Me.MaximumSize = New System.Drawing.Size(1024, 768)
         Me.MinimumSize = New System.Drawing.Size(1024, 768)
         Me.Name = "frm_Prefs"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LSAT :: Preferences"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.Database.ResumeLayout(False)
-        Me.Database.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -278,16 +276,16 @@ Partial Class frm_Prefs
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents txtb_dbPort As TextBox
+    Friend WithEvents txtb_dbHost As TextBox
+    Friend WithEvents txtb_dbName As TextBox
+    Friend WithEvents lbl_dbPort As Label
+    Friend WithEvents lbl_dbHost As Label
+    Friend WithEvents lbl_dbName As Label
+    Friend WithEvents txtb_dbPass As TextBox
+    Friend WithEvents lbl_dbPass As Label
+    Friend WithEvents txtb_dbUser As TextBox
+    Friend WithEvents lbl_dbUser As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
 End Class
