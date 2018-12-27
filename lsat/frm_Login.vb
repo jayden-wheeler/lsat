@@ -7,5 +7,6 @@
     Private Sub btn_OK_Click(sender As Object, e As EventArgs) Handles btn_OK.Click
         frm_Main.Show()
         Me.Hide()
+
     End Sub
 End Class

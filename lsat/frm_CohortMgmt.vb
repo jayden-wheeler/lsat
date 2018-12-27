@@ -8,4 +8,9 @@
         frm_enrollClient.Show()
         Me.Hide()
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        frm_NewCohort.Show()
+        Me.Hide()
+    End Sub
 End Class
