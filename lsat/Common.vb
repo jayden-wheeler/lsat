@@ -5,7 +5,7 @@
         Dim Is1stWeek As Boolean = True
 
         Do While checkDate <= endDate
-            If checkDate.DayOfWeek = DayOfWeek.Monday Then
+            If checkDate.DayOfWeek = DayOfWeek.Friday Then
                 result.Add(checkDate)
                 If Is1stWeek Then Is1stWeek = False
             Else
@@ -25,8 +25,8 @@
         Dim Is1stWeek As Boolean = True
 
         Do While checkDate <= endDate
-            If checkDate.DayOfWeek = DayOfWeek.Monday Then
-                result.Add(checkDate)
+            If checkDate.DayOfWeek = DayOfWeek.Friday Then
+                result.Add(checkDate.AddDays(6))
                 If Is1stWeek Then Is1stWeek = False
             Else
                 If Is1stWeek Then

@@ -75,6 +75,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_NCConfirm.Designer.vb">
+      <DependentUpon>frm_NCConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NCConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_NewCohort.Designer.vb">
       <DependentUpon>frm_NewCohort.vb</DependentUpon>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_NCConfirm.resx">
+      <DependentUpon>frm_NCConfirm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_NewCohort.resx">
       <DependentUpon>frm_NewCohort.vb</DependentUpon>
     </EmbeddedResource>
