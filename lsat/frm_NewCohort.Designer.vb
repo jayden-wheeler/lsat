@@ -23,19 +23,20 @@ Partial Class frm_NewCohort
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_NewCohort))
-        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Months")
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbox_lcType = New System.Windows.Forms.ComboBox()
-        Me.dtp_cohortStartD = New System.Windows.Forms.DateTimePicker()
-        Me.dtp_cohortEndD = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtb_cohortD = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.dg_weekDetails = New System.Windows.Forms.DataGridView()
+        Me.weekNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.startDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.endDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbl_cohortEndD = New System.Windows.Forms.Label()
         Me.lbl_cohortStartD = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -45,13 +46,15 @@ Partial Class frm_NewCohort
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lbl_cohortType = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TreeView1 = New System.Windows.Forms.TreeView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_reset = New System.Windows.Forms.Button()
+        Me.btn_OK = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.dtp_cohortEndD = New System.Windows.Forms.DateTimePicker()
+        Me.dtp_cohortStartD = New System.Windows.Forms.DateTimePicker()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dg_weekDetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -92,23 +95,6 @@ Partial Class frm_NewCohort
         Me.cbox_lcType.Name = "cbox_lcType"
         Me.cbox_lcType.Size = New System.Drawing.Size(121, 24)
         Me.cbox_lcType.TabIndex = 4
-        '
-        'dtp_cohortStartD
-        '
-        Me.dtp_cohortStartD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtp_cohortStartD.Location = New System.Drawing.Point(221, 355)
-        Me.dtp_cohortStartD.Name = "dtp_cohortStartD"
-        Me.dtp_cohortStartD.Size = New System.Drawing.Size(121, 22)
-        Me.dtp_cohortStartD.TabIndex = 5
-        Me.dtp_cohortStartD.Value = New Date(2018, 12, 27, 0, 0, 0, 0)
-        '
-        'dtp_cohortEndD
-        '
-        Me.dtp_cohortEndD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtp_cohortEndD.Location = New System.Drawing.Point(221, 400)
-        Me.dtp_cohortEndD.Name = "dtp_cohortEndD"
-        Me.dtp_cohortEndD.Size = New System.Drawing.Size(121, 22)
-        Me.dtp_cohortEndD.TabIndex = 6
         '
         'Label3
         '
@@ -155,6 +141,7 @@ Partial Class frm_NewCohort
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.dg_weekDetails)
         Me.GroupBox1.Controls.Add(Me.lbl_cohortEndD)
         Me.GroupBox1.Controls.Add(Me.lbl_cohortStartD)
         Me.GroupBox1.Controls.Add(Me.Label13)
@@ -164,13 +151,43 @@ Partial Class frm_NewCohort
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.lbl_cohortType)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TreeView1)
         Me.GroupBox1.Location = New System.Drawing.Point(557, 251)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(377, 336)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "New Cohort Information:"
+        '
+        'dg_weekDetails
+        '
+        Me.dg_weekDetails.AllowUserToAddRows = False
+        Me.dg_weekDetails.AllowUserToDeleteRows = False
+        Me.dg_weekDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg_weekDetails.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.weekNum, Me.startDate, Me.endDate})
+        Me.dg_weekDetails.Location = New System.Drawing.Point(6, 182)
+        Me.dg_weekDetails.Name = "dg_weekDetails"
+        Me.dg_weekDetails.RowTemplate.Height = 24
+        Me.dg_weekDetails.Size = New System.Drawing.Size(365, 130)
+        Me.dg_weekDetails.TabIndex = 10
+        Me.dg_weekDetails.Visible = False
+        '
+        'weekNum
+        '
+        Me.weekNum.HeaderText = "Week"
+        Me.weekNum.Name = "weekNum"
+        Me.weekNum.ReadOnly = True
+        '
+        'startDate
+        '
+        Me.startDate.HeaderText = "Start Date"
+        Me.startDate.Name = "startDate"
+        Me.startDate.ReadOnly = True
+        '
+        'endDate
+        '
+        Me.endDate.HeaderText = "End Date"
+        Me.endDate.Name = "endDate"
+        Me.endDate.ReadOnly = True
         '
         'lbl_cohortEndD
         '
@@ -256,33 +273,23 @@ Partial Class frm_NewCohort
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "Type:"
         '
-        'TreeView1
+        'btn_reset
         '
-        Me.TreeView1.Location = New System.Drawing.Point(107, 163)
-        Me.TreeView1.Name = "TreeView1"
-        TreeNode5.Name = "Node0"
-        TreeNode5.Text = "Months"
-        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode5})
-        Me.TreeView1.Size = New System.Drawing.Size(249, 154)
-        Me.TreeView1.TabIndex = 0
+        Me.btn_reset.Location = New System.Drawing.Point(186, 446)
+        Me.btn_reset.Name = "btn_reset"
+        Me.btn_reset.Size = New System.Drawing.Size(75, 23)
+        Me.btn_reset.TabIndex = 13
+        Me.btn_reset.Text = "Reset"
+        Me.btn_reset.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btn_OK
         '
-        Me.Button1.Location = New System.Drawing.Point(186, 446)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Reset"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(267, 446)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "OK"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_OK.Location = New System.Drawing.Point(267, 446)
+        Me.btn_OK.Name = "btn_OK"
+        Me.btn_OK.Size = New System.Drawing.Size(75, 23)
+        Me.btn_OK.TabIndex = 14
+        Me.btn_OK.Text = "OK"
+        Me.btn_OK.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -303,6 +310,23 @@ Partial Class frm_NewCohort
         Me.Label16.TabIndex = 16
         Me.Label16.Text = "Back to Cohort Management"
         '
+        'dtp_cohortEndD
+        '
+        Me.dtp_cohortEndD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtp_cohortEndD.Location = New System.Drawing.Point(221, 400)
+        Me.dtp_cohortEndD.Name = "dtp_cohortEndD"
+        Me.dtp_cohortEndD.Size = New System.Drawing.Size(121, 22)
+        Me.dtp_cohortEndD.TabIndex = 6
+        '
+        'dtp_cohortStartD
+        '
+        Me.dtp_cohortStartD.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtp_cohortStartD.Location = New System.Drawing.Point(221, 355)
+        Me.dtp_cohortStartD.Name = "dtp_cohortStartD"
+        Me.dtp_cohortStartD.Size = New System.Drawing.Size(121, 22)
+        Me.dtp_cohortStartD.TabIndex = 5
+        Me.dtp_cohortStartD.Value = New Date(2018, 12, 27, 0, 0, 0, 0)
+        '
         'frm_NewCohort
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -311,8 +335,8 @@ Partial Class frm_NewCohort
         Me.ClientSize = New System.Drawing.Size(1006, 721)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_OK)
+        Me.Controls.Add(Me.btn_reset)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtb_cohortD)
@@ -333,6 +357,7 @@ Partial Class frm_NewCohort
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.dg_weekDetails, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -343,15 +368,12 @@ Partial Class frm_NewCohort
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents cbox_lcType As ComboBox
-    Friend WithEvents dtp_cohortStartD As DateTimePicker
-    Friend WithEvents dtp_cohortEndD As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtb_cohortD As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TreeView1 As TreeView
     Friend WithEvents lbl_cohortEndD As Label
     Friend WithEvents lbl_cohortStartD As Label
     Friend WithEvents Label13 As Label
@@ -361,8 +383,14 @@ Partial Class frm_NewCohort
     Friend WithEvents Label9 As Label
     Friend WithEvents lbl_cohortType As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_reset As Button
+    Friend WithEvents btn_OK As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label16 As Label
+    Friend WithEvents dtp_cohortEndD As DateTimePicker
+    Friend WithEvents dtp_cohortStartD As DateTimePicker
+    Friend WithEvents dg_weekDetails As DataGridView
+    Friend WithEvents weekNum As DataGridViewTextBoxColumn
+    Friend WithEvents startDate As DataGridViewTextBoxColumn
+    Friend WithEvents endDate As DataGridViewTextBoxColumn
 End Class
